@@ -9,6 +9,7 @@ export const FETCH_SMURFS_ERRORS = "FETCH_SMURFS_ERRORS";
 export const fetchSmurfs = () => {
   return (dispatch) => {
     dispatch({ type: FETCH_SMURFS });
+
     axios
       .get("http://localhost:3333/smurfs")
       .then((response) => {
